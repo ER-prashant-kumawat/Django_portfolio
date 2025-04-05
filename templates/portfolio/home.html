@@ -1,0 +1,957 @@
+{% extends 'portfolio/base.html' %}
+
+{% block title %}Portfolio{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section id="home" class="min-vh-100 d-flex align-items-center">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <div class="hero-content">
+                    <div class="hero-badge animate__animated animate__fadeInDown">
+                        <span class="badge bg-primary">Full Stack Developer</span>
+                    </div>
+                    <h1 class="display-4 fw-bold animate__animated animate__fadeInDown">Welcome to My Portfolio</h1>
+                    <p class="lead animate__animated animate__fadeInUp animate__delay-1s">
+                        I'm a passionate developer creating amazing digital experiences.
+                    </p>
+                    <div class="hero-buttons animate__animated animate__fadeInUp animate__delay-2s">
+                        <a href="#projects" class="btn btn-primary me-3">View My Work</a>
+                        <a href="#contact" class="btn btn-outline-light">Contact Me</a>
+                    </div>
+                    <div class="social-icons mt-4 animate__animated animate__fadeInUp animate__delay-3s">
+                        <a href="https://github.com/ER-prashant-kumawat" class="social-icon" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/theprashant-kumawat-bba8aa267/" class="social-icon" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.hackerrank.com/profile/prashantkumawat4" class="social-icon" title="HackerRank"><i class="fab fa-hackerrank"></i></a>
+                        <a href="https://leetcode.com/u/PR143_asH/" class="social-icon" title="LeetCode"><i class="fas fa-code"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="position-relative">
+                    <div class="profile-image animate__animated animate__zoomIn animate__delay-1s">
+                        <!-- Profile image placeholder -->
+                        <div class="profile-circle">
+                            <div class="profile-inner">
+                                <img src="https://avatars.githubusercontent.com/u/ER-prashant-kumawat" alt="Prashant Kumawat" class="profile-photo">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="floating-badge animate__animated animate__pulse animate__infinite">
+                        <span>Available for Hire</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="py-5">
+    <div class="container">
+        <div class="section-header text-center mb-5">
+            <h2 class="display-4 fw-bold animate__animated animate__fadeInDown">About Me</h2>
+            <div class="section-divider"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 animate__animated animate__fadeInLeft">
+                <div class="about-content">
+                    <p class="lead">
+                        I am a passionate developer with a strong foundation in Computer Science.
+                        My journey in technology started with a deep curiosity for building things that make a difference.
+                    </p>
+                    <p>
+                        As a Computer Science graduate, I bring a solid theoretical background combined with practical coding skills.
+                        I specialize in full-stack development, with a focus on creating user-friendly and efficient solutions.
+                        My goal is to build applications that not only look great but also provide exceptional user experiences.
+                    </p>
+                    <div class="about-stats mt-4">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="stat-item">
+                                    <h3 class="stat-number">Fresher</h3>
+                                    <p class="stat-text">Experience</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="stat-item">
+                                    <h3 class="stat-number">15+</h3>
+                                    <p class="stat-text">Projects Completed</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="resume-download mt-4">
+                        <a href="https://drive.google.com/file/d/your-resume-file-id/view" class="btn btn-outline-primary">
+                            <i class="fas fa-download me-2"></i>Download Resume
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 animate__animated animate__fadeInRight">
+                <div class="skills-container">
+                    <h3 class="mb-4">Skills</h3>
+                    <div class="skill-item mb-4">
+                        <div class="d-flex justify-content-between">
+                            <span>Java</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item mb-4">
+                        <div class="d-flex justify-content-between">
+                            <span>MySQL</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item mb-4">
+                        <div class="d-flex justify-content-between">
+                            <span>HTML/CSS</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item mb-4">
+                        <div class="d-flex justify-content-between">
+                            <span>Python/Django</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item mb-4">
+                        <div class="d-flex justify-content-between">
+                            <span>UI/UX Design</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 70%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-tags mt-4">
+                        <span class="skill-tag">Data Structures</span>
+                        <span class="skill-tag">Algorithms</span>
+                        <span class="skill-tag">Problem Solving</span>
+                        <span class="skill-tag">Team Collaboration</span>
+                        <span class="skill-tag">Agile/Scrum</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="py-5">
+    <div class="container">
+        <div class="section-header text-center mb-5">
+            <h2 class="display-4 fw-bold animate__animated animate__fadeInDown">My Projects</h2>
+            <div class="section-divider"></div>
+        </div>
+        
+        <div class="project-filter mb-5 text-center animate__animated animate__fadeInUp">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="java">Java</button>
+            <button class="filter-btn" data-filter="web">Web</button>
+            <button class="filter-btn" data-filter="django">Django</button>
+            <button class="filter-btn" data-filter="python">Python</button>
+        </div>
+        
+        <div class="row g-4">
+            <!-- Project 1 -->
+            <div class="col-md-6 col-lg-4 animate__animated animate__fadeInUp project-item" data-category="web">
+                <div class="project-card">
+                    <div class="card h-100">
+                        <div class="card-img-top">
+                            <div class="project-image">
+                                <i class="fas fa-yoga"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://er-prashant-kumawat.github.io/yogaclass.github.io/" class="project-link" title="View Demo"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="https://github.com/ER-prashant-kumawat/yogaclass.github.io" class="project-link" title="Source Code"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Yoga Class Website</h5>
+                            <p class="card-text">A responsive website for a yoga class with modern design.</p>
+                            <div class="tech-stack">
+                                <span class="badge bg-primary">HTML</span>
+                                <span class="badge bg-info">CSS</span>
+                                <span class="badge bg-success">Bootstrap</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 2 -->
+            <div class="col-md-6 col-lg-4 animate__animated animate__fadeInUp project-item" style="animation-delay: 0.2s" data-category="django">
+                <div class="project-card">
+                    <div class="card h-100">
+                        <div class="card-img-top">
+                            <div class="project-image">
+                                <i class="fas fa-image"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/ER-prashant-kumawat/image-Classifier-Django" class="project-link" title="Source Code"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Image Classifier</h5>
+                            <p class="card-text">A Django application for classifying images using machine learning.</p>
+                            <div class="tech-stack">
+                                <span class="badge bg-primary">Django</span>
+                                <span class="badge bg-info">Python</span>
+                                <span class="badge bg-success">Machine Learning</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 3 -->
+            <div class="col-md-6 col-lg-4 animate__animated animate__fadeInUp project-item" data-category="django">
+                <div class="project-card">
+                    <div class="card h-100">
+                        <div class="card-img-top">
+                            <div class="project-image">
+                                <i class="fas fa-tasks"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/ER-prashant-kumawat/Task-Manager-Django" class="project-link" title="Source Code"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Task Manager</h5>
+                            <p class="card-text">A Django-based task management application with user authentication.</p>
+                            <div class="tech-stack">
+                                <span class="badge bg-primary">Django</span>
+                                <span class="badge bg-info">Python</span>
+                                <span class="badge bg-success">SQLite</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 4 -->
+            <div class="col-md-6 col-lg-4 animate__animated animate__fadeInUp project-item" style="animation-delay: 0.2s" data-category="python">
+                <div class="project-card">
+                    <div class="card h-100">
+                        <div class="card-img-top">
+                            <div class="project-image">
+                                <i class="fas fa-language"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/ER-prashant-kumawat/Create-Language-Translator" class="project-link" title="Source Code"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Language Translator</h5>
+                            <p class="card-text">A language translation application built with Python.</p>
+                            <div class="tech-stack">
+                                <span class="badge bg-primary">Python</span>
+                                <span class="badge bg-info">NLP</span>
+                                <span class="badge bg-success">Machine Learning</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 5 -->
+            <div class="col-md-6 col-lg-4 animate__animated animate__fadeInUp project-item" style="animation-delay: 0.4s" data-category="python">
+                <div class="project-card">
+                    <div class="card h-100">
+                        <div class="card-img-top">
+                            <div class="project-image">
+                                <i class="fas fa-venus-mars"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/ER-prashant-kumawat/gender-detection" class="project-link" title="Source Code"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Gender Detection</h5>
+                            <p class="card-text">A machine learning model to detect gender from images.</p>
+                            <div class="tech-stack">
+                                <span class="badge bg-primary">Python</span>
+                                <span class="badge bg-info">Machine Learning</span>
+                                <span class="badge bg-secondary">Computer Vision</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Achievements Section -->
+<section id="achievements" class="py-5">
+    <div class="container">
+        <div class="section-header text-center mb-5">
+            <h2 class="display-4 fw-bold animate__animated animate__fadeInDown">Achievements</h2>
+            <div class="section-divider"></div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-4 mb-4 animate__animated animate__fadeInUp">
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h4>HackerRank 5★</h4>
+                    <p>5-star rating in Java programming on HackerRank</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4 animate__animated animate__fadeInUp" style="animation-delay: 0.2s">
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h4>LeetCode Top 10%</h4>
+                    <p>Ranked in the top 10% of LeetCode users worldwide</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4 animate__animated animate__fadeInUp" style="animation-delay: 0.4s">
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h4>Best Project Award</h4>
+                    <p>Received award for best project in college competition</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-5">
+    <div class="container">
+        <div class="section-header text-center mb-5">
+            <h2 class="display-4 fw-bold animate__animated animate__fadeInDown">Get in Touch</h2>
+            <div class="section-divider"></div>
+        </div>
+        
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="contact-form animate__animated animate__fadeInUp">
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6 mb-4">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" class="form-control" id="subject" required>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                    </form>
+                </div>
+                
+                <div class="contact-info mt-5 text-center animate__animated animate__fadeInUp animate__delay-1s">
+                    <h3 class="mb-4">Other Ways to Reach Me</h3>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope mb-2"></i>
+                                <p class="text-break">prashant.kumawatpk143@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="contact-item">
+                                <i class="fas fa-phone mb-2"></i>
+                                <p>+91 7742907096</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt mb-2"></i>
+                                <p>Rajasthan, India</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="coding-profiles mt-5 text-center animate__animated animate__fadeInUp animate__delay-2s">
+                    <h3 class="mb-4">Coding Profiles</h3>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="profile-item">
+                                <i class="fab fa-linkedin mb-2"></i>
+                                <p>LinkedIn</p>
+                                <a href="https://www.linkedin.com/in/theprashant-kumawat-bba8aa267/" class="btn btn-sm btn-outline-primary mt-2">View Profile</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="profile-item">
+                                <i class="fab fa-hackerrank mb-2"></i>
+                                <p>HackerRank</p>
+                                <a href="https://www.hackerrank.com/profile/prashantkumawat4" class="btn btn-sm btn-outline-primary mt-2">View Profile</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="profile-item">
+                                <i class="fas fa-code mb-2"></i>
+                                <p>LeetCode</p>
+                                <a href="https://leetcode.com/u/PR143_asH/" class="btn btn-sm btn-outline-primary mt-2">View Profile</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-4 text-center">
+    <div class="container">
+        <p>&copy; 2025 Portfolio. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<style>
+    /* Hero Section */
+    .hero-content {
+        padding-right: 20px;
+    }
+    
+    .hero-badge {
+        margin-bottom: 20px;
+    }
+    
+    .hero-badge .badge {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+        border-radius: 30px;
+        background: linear-gradient(45deg, var(--accent-color), #00c6ff);
+        border: none;
+    }
+    
+    .hero-buttons .btn {
+        padding: 10px 25px;
+        border-radius: 30px;
+        font-weight: 500;
+        transition: all 0.3s ease;
+    }
+    
+    .social-icons {
+        display: flex;
+        gap: 15px;
+    }
+    
+    .social-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: var(--light-grey);
+        color: var(--text-color);
+        transition: all 0.3s ease;
+    }
+    
+    .social-icon:hover {
+        background-color: var(--accent-color);
+        color: white;
+        transform: translateY(-5px);
+    }
+    
+    .profile-image {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .profile-circle {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        background: linear-gradient(45deg, var(--accent-color), #00c6ff);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 10px 30px rgba(0, 123, 255, 0.3);
+        overflow: hidden;
+    }
+    
+    .profile-inner {
+        width: 280px;
+        height: 280px;
+        border-radius: 50%;
+        background-color: var(--dark-grey);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+    
+    .profile-photo {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    
+    .floating-badge {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background-color: var(--accent-color);
+        color: white;
+        padding: 8px 15px;
+        border-radius: 30px;
+        font-weight: 500;
+        box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+    }
+    
+    /* Section Styles */
+    section {
+        position: relative;
+        padding: 100px 0;
+    }
+    
+    .section-header {
+        margin-bottom: 60px;
+    }
+    
+    .section-divider {
+        width: 80px;
+        height: 4px;
+        background-color: var(--accent-color);
+        margin: 20px auto;
+        border-radius: 2px;
+    }
+    
+    /* About Section */
+    .about-content {
+        padding-right: 20px;
+    }
+    
+    .stat-item {
+        background-color: var(--light-grey);
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+    
+    .stat-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+    
+    .stat-number {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: var(--accent-color);
+        margin-bottom: 5px;
+    }
+    
+    .stat-text {
+        margin-bottom: 0;
+        color: var(--text-secondary);
+    }
+    
+    .resume-download .btn {
+        border-radius: 30px;
+        padding: 10px 25px;
+    }
+    
+    /* Skills */
+    .progress {
+        height: 10px;
+        background-color: var(--light-grey);
+        border-radius: 5px;
+        overflow: hidden;
+    }
+    
+    .progress-bar {
+        background-color: var(--accent-color);
+        transition: width 1.5s ease-in-out;
+    }
+    
+    .skill-item {
+        opacity: 0;
+        animation: fadeIn 0.5s ease-in-out forwards;
+    }
+    
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    .skill-item:nth-child(1) { animation-delay: 0.2s; }
+    .skill-item:nth-child(2) { animation-delay: 0.4s; }
+    .skill-item:nth-child(3) { animation-delay: 0.6s; }
+    .skill-item:nth-child(4) { animation-delay: 0.8s; }
+    .skill-item:nth-child(5) { animation-delay: 1s; }
+    
+    .skill-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+    .skill-tag {
+        background-color: var(--light-grey);
+        color: var(--text-color);
+        padding: 5px 15px;
+        border-radius: 30px;
+        font-size: 0.9rem;
+        transition: all 0.3s ease;
+    }
+    
+    .skill-tag:hover {
+        background-color: var(--accent-color);
+        color: white;
+        transform: translateY(-3px);
+    }
+    
+    /* Projects Section */
+    .project-filter {
+        margin-bottom: 30px;
+    }
+    
+    .filter-btn {
+        background: none;
+        border: none;
+        color: var(--text-color);
+        padding: 8px 20px;
+        margin: 0 5px;
+        border-radius: 30px;
+        font-weight: 500;
+        transition: all 0.3s ease;
+    }
+    
+    .filter-btn:hover, .filter-btn.active {
+        background-color: var(--accent-color);
+        color: white;
+    }
+    
+    .project-card {
+        transition: transform 0.3s ease;
+    }
+    
+    .project-card:hover {
+        transform: translateY(-10px);
+    }
+    
+    .card {
+        background-color: var(--light-grey);
+        border: none;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+    
+    .card-img-top {
+        height: 200px;
+        background-color: var(--dark-grey);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .project-image {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(45deg, var(--dark-grey), var(--light-grey));
+    }
+    
+    .project-image i {
+        font-size: 60px;
+        color: var(--accent-color);
+    }
+    
+    .project-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: all 0.3s ease;
+    }
+    
+    .project-card:hover .project-overlay {
+        opacity: 1;
+    }
+    
+    .project-links {
+        display: flex;
+        gap: 15px;
+    }
+    
+    .project-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: var(--accent-color);
+        color: white;
+        transition: all 0.3s ease;
+    }
+    
+    .project-link:hover {
+        background-color: white;
+        color: var(--accent-color);
+        transform: translateY(-5px);
+    }
+    
+    .card-body {
+        color: var(--text-color);
+        padding: 25px;
+    }
+    
+    .card-title {
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+    
+    .tech-stack {
+        margin-top: 1rem;
+    }
+    
+    .badge {
+        margin-right: 0.5rem;
+        padding: 0.5rem 1rem;
+        border-radius: 30px;
+        font-weight: 500;
+    }
+    
+    .project-links .btn {
+        border-radius: 30px;
+        padding: 5px 15px;
+    }
+    
+    /* Achievements Section */
+    .achievement-card {
+        background-color: var(--light-grey);
+        border-radius: 10px;
+        padding: 30px;
+        text-align: center;
+        transition: all 0.3s ease;
+        height: 100%;
+    }
+    
+    .achievement-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+    
+    .achievement-icon {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background: linear-gradient(45deg, var(--accent-color), #00c6ff);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 20px;
+    }
+    
+    .achievement-icon i {
+        font-size: 30px;
+        color: white;
+    }
+    
+    .achievement-card h4 {
+        margin-bottom: 15px;
+        font-weight: 600;
+    }
+    
+    /* Contact Section */
+    .form-control {
+        background-color: var(--light-grey);
+        border: 1px solid #444;
+        color: var(--text-color);
+        padding: 12px;
+        border-radius: 5px;
+    }
+    
+    .form-control:focus {
+        background-color: var(--light-grey);
+        border-color: var(--accent-color);
+        color: var(--text-color);
+        box-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.25);
+    }
+    
+    .form-label {
+        color: var(--text-color);
+        font-weight: 500;
+        margin-bottom: 8px;
+    }
+    
+    .contact-item {
+        padding: 25px;
+        border-radius: 10px;
+        background-color: var(--light-grey);
+        transition: transform 0.3s ease;
+        height: 100%;
+    }
+    
+    .contact-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+    
+    .contact-item i {
+        font-size: 2.5rem;
+        color: var(--accent-color);
+        margin-bottom: 15px;
+    }
+    
+    /* Coding Profiles */
+    .profile-item {
+        padding: 25px;
+        border-radius: 10px;
+        background-color: var(--light-grey);
+        transition: transform 0.3s ease;
+        height: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .profile-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+    
+    .profile-item i {
+        font-size: 2.5rem;
+        color: var(--accent-color);
+        margin-bottom: 15px;
+    }
+    
+    .profile-item p {
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+    
+    /* Footer */
+    footer {
+        background-color: var(--light-grey);
+        color: var(--text-secondary);
+    }
+    
+    /* Responsive Adjustments */
+    @media (max-width: 768px) {
+        .hero-content {
+            padding-right: 0;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        
+        .social-icons {
+            justify-content: center;
+        }
+        
+        .about-content {
+            padding-right: 0;
+            margin-bottom: 40px;
+        }
+        
+        .profile-circle {
+            width: 250px;
+            height: 250px;
+        }
+        
+        .profile-inner {
+            width: 230px;
+            height: 230px;
+        }
+        
+        .floating-badge {
+            top: 10px;
+            right: 10px;
+        }
+    }
+</style>
+
+<!-- Add Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<!-- Add JavaScript for project filtering -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const projectItems = document.querySelectorAll('.project-item');
+        
+        filterButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                // Remove active class from all buttons
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                
+                // Add active class to clicked button
+                this.classList.add('active');
+                
+                const filterValue = this.getAttribute('data-filter');
+                
+                projectItems.forEach(item => {
+                    if (filterValue === 'all') {
+                        item.style.display = 'block';
+                    } else {
+                        if (item.getAttribute('data-category').includes(filterValue)) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    }
+                });
+            });
+        });
+    });
+</script>
+{% endblock %} 

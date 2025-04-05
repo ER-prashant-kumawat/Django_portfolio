@@ -1,0 +1,85 @@
+{% extends 'portfolio/base.html' %}
+
+{% block title %}About Me - Portfolio{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+    <div class="row">
+        <div class="col-md-6 animate__animated animate__fadeInLeft">
+            <h1 class="display-4 mb-4">About Me</h1>
+            <p class="lead">
+                I am a passionate developer with expertise in creating modern web applications.
+                My journey in technology started with a curiosity for building things that make a difference.
+            </p>
+            <p>
+                I specialize in full-stack development, with a focus on creating user-friendly and efficient solutions.
+                My goal is to build applications that not only look great but also provide exceptional user experiences.
+            </p>
+        </div>
+        <div class="col-md-6 animate__animated animate__fadeInRight">
+            <h2 class="mb-4">Skills</h2>
+            <div class="skills-container">
+                <div class="skill-item mb-3">
+                    <div class="d-flex justify-content-between">
+                        <span>Python/Django</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="skill-item mb-3">
+                    <div class="d-flex justify-content-between">
+                        <span>HTML/CSS</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="skill-item mb-3">
+                    <div class="d-flex justify-content-between">
+                        <span>JavaScript</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 80%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .progress {
+        height: 10px;
+        background-color: var(--light-grey);
+    }
+    
+    .progress-bar {
+        background-color: #007bff;
+        transition: width 1s ease-in-out;
+    }
+    
+    .skill-item {
+        opacity: 0;
+        animation: fadeIn 0.5s ease-in-out forwards;
+    }
+    
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    .skill-item:nth-child(1) { animation-delay: 0.2s; }
+    .skill-item:nth-child(2) { animation-delay: 0.4s; }
+    .skill-item:nth-child(3) { animation-delay: 0.6s; }
+</style>
+{% endblock %} 

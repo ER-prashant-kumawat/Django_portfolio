@@ -1,0 +1,91 @@
+{% extends 'portfolio/base.html' %}
+
+{% block title %}Projects - Portfolio{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+    <h1 class="display-4 text-center mb-5 animate__animated animate__fadeInDown">My Projects</h1>
+    
+    <div class="row g-4">
+        <!-- Project 1 -->
+        <div class="col-md-6 col-lg-4 animate__animated animate__fadeInUp">
+            <div class="project-card">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">E-Commerce Website</h5>
+                        <p class="card-text">A full-featured e-commerce platform built with Django and React.</p>
+                        <div class="tech-stack">
+                            <span class="badge bg-primary">Django</span>
+                            <span class="badge bg-info">React</span>
+                            <span class="badge bg-success">PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Project 2 -->
+        <div class="col-md-6 col-lg-4 animate__animated animate__fadeInUp" style="animation-delay: 0.2s">
+            <div class="project-card">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Task Management App</h5>
+                        <p class="card-text">A collaborative task management application with real-time updates.</p>
+                        <div class="tech-stack">
+                            <span class="badge bg-primary">Django</span>
+                            <span class="badge bg-warning">JavaScript</span>
+                            <span class="badge bg-danger">WebSocket</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Project 3 -->
+        <div class="col-md-6 col-lg-4 animate__animated animate__fadeInUp" style="animation-delay: 0.4s">
+            <div class="project-card">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Portfolio Website</h5>
+                        <p class="card-text">A responsive portfolio website with modern animations.</p>
+                        <div class="tech-stack">
+                            <span class="badge bg-primary">Django</span>
+                            <span class="badge bg-info">Bootstrap</span>
+                            <span class="badge bg-secondary">CSS3</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .project-card {
+        transition: transform 0.3s ease;
+    }
+    
+    .project-card:hover {
+        transform: translateY(-10px);
+    }
+    
+    .card {
+        background-color: var(--light-grey);
+        border: none;
+        border-radius: 10px;
+    }
+    
+    .card-body {
+        color: var(--text-color);
+    }
+    
+    .tech-stack {
+        margin-top: 1rem;
+    }
+    
+    .badge {
+        margin-right: 0.5rem;
+        padding: 0.5rem 1rem;
+    }
+</style>
+{% endblock %} 
