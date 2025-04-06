@@ -19,12 +19,32 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
+        pip install django-whitenoise
+    
+    - name: Configure Django for static hosting
+      run: |
+        echo "import os" > portfolio_project/settings_prod.py
+        echo "from .settings import *" >> portfolio_project/settings_prod.py
+        echo "DEBUG = False" >> portfolio_project/settings_prod.py
+        echo "ALLOWED_HOSTS = ['*']" >> portfolio_project/settings_prod.py
+        echo "STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')" >> portfolio_project/settings_prod.py
     
     - name: Collect static files
-      run: python manage.py collectstatic --noinput
+      run: python manage.py collectstatic --noinput --settings=portfolio_project.settings_prod
+    
+    - name: Create index.html
+      run: |
+        mkdir -p docs
+        python manage.py dumpdata --exclude auth.permission --exclude contenttypes > data.json
+        python -c "import json, os; from django.template.loader import render_to_string; from django.conf import settings; import django; django.setup(); f = open('data.json', 'r'); data = json.load(f); context = {'projects': [item for item in data if item['model'] == 'portfolio.project'], 'skills': [item for item in data if item['model'] == 'portfolio.skill'], 'achievements': [item for item in data if item['model'] == 'portfolio.achievement']}; html = render_to_string('portfolio/home.html', context); f = open('docs/index.html', 'w'); f.write(html)"
+    
+    - name: Copy static files to docs
+      run: |
+        cp -r staticfiles/* docs/
+        cp -r static/* docs/static/
     
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./staticfiles 
+        publish_dir: ./docs 
