@@ -1,80 +1,79 @@
-# Portfolio Website
+# Django Portfolio Website
 
-A modern, responsive portfolio website built with Django showcasing my skills, projects, and achievements.
+A modern portfolio website built with Django, featuring:
 
-## Features
-
-- Responsive design that works on all devices
-- Dark theme with accent colors
-- Animated sections and elements
-- Project showcase with filtering options
+- Responsive design
+- Dynamic content management
+- Project showcase
 - Contact form
+- Skills and achievements section
 - Social media integration
-- Skills visualization
-- Achievement highlights
 
 ## Technologies Used
 
 - Django
-- HTML/CSS
-- JavaScript
+- HTML5
+- CSS3
 - Bootstrap
+- JavaScript
 - Font Awesome
-- Animate.css
 
-## Setup and Installation
+## Features
 
-1. Clone the repository:
-   ```
-   git clone https://github.com/ER-prashant-kumawat/portfolio.git
-   cd portfolio
-   ```
+- Home page with hero section
+- About section with skills
+- Projects showcase
+- Achievements section
+- Contact form
+- Social media links
+- Responsive design for all devices
 
-2. Create a virtual environment and activate it:
-   ```
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   ```
+## Installation
 
-3. Install dependencies:
-   ```
-   pip install -r requirements.txt
-   ```
+1. Clone the repository
+```bash
+git clone https://github.com/ER-prashant-kumawat/Django_portfolio.git
+```
 
-4. Run migrations:
-   ```
-   python manage.py migrate
-   ```
+2. Create virtual environment
+```bash
+python -m venv venv
+```
 
-5. Start the development server:
-   ```
-   python manage.py runserver
-   ```
+3. Activate virtual environment
+```bash
+# Windows
+venv\Scripts\activate
+# Linux/Mac
+source venv/bin/activate
+```
 
-6. Open your browser and navigate to `http://127.0.0.1:8000/`
+4. Install dependencies
+```bash
+pip install -r requirements.txt
+```
+
+5. Run migrations
+```bash
+python manage.py migrate
+```
+
+6. Run the development server
+```bash
+python manage.py runserver
+```
 
 ## Deployment
 
-This portfolio can be deployed to various platforms:
-
-- GitHub Pages (for static sites)
+The website can be deployed on various platforms like:
 - Heroku
 - PythonAnywhere
 - DigitalOcean
 - AWS
 
-## Customization
-
-To customize this portfolio for your own use:
-
-1. Update personal information in `templates/portfolio/home.html`
-2. Modify the color scheme in `templates/portfolio/base.html`
-3. Add your own projects to the projects section
-4. Update skills and achievements
-
 ## License
 
-This project is open source and available under the [MIT License](LICENSE).
+This project is licensed under the MIT License.
 
 ## Contact
 
@@ -82,4 +81,4 @@ This project is open source and available under the [MIT License](LICENSE).
 - LinkedIn: [Prashant Kumawat](https://www.linkedin.com/in/theprashant-kumawat-bba8aa267/)
 - GitHub: [ER-prashant-kumawat](https://github.com/ER-prashant-kumawat)
 - HackerRank: [prashantkumawat4](https://www.hackerrank.com/profile/prashantkumawat4)
-- LeetCode: [PR143_asH](https://leetcode.com/u/PR143_asH/) 
+- LeetCode: [PR143_asH](https://leetcode.com/u/PR143_asH/)
